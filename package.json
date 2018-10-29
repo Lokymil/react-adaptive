@@ -1,0 +1,31 @@
+{
+  "name": "react-adaptive",
+  "version": "1.0.0",
+  "description": "A Higher Order Component (HOC) allowing you to adapt your component display according to its own size and integrate your website with adaptive design.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lokymil/react-adaptive.git"
+  },
+  "keywords": [
+    "react",
+    "adaptive",
+    "responsive",
+    "component"
+  ],
+  "author": "Lokymil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lokymil/react-adaptive/issues"
+  },
+  "homepage": "https://github.com/Lokymil/react-adaptive#readme",
+  "peerDependencies": {
+    "react": "^16.0.0"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6"
+  }
+}
