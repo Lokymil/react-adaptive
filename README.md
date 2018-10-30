@@ -142,9 +142,9 @@ size = { width: `current component width` }
 import React from "react";
 import { withSize } from "react-adaptive";
 
-const myComponent = ({ size }) => (<div>My own size is {size.width}</div>);
+const MyComponent = ({ size }) => (<div>My own size is {size.width}</div>);
 
-export default MyComponent;
+export default withSize(MyComponent);
 ```
 
 ## License
