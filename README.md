@@ -2,17 +2,21 @@
 
 A Higher Order Component (HOC) allowing you to adapt your component display according to its own size and integrate you website with adaptive design.
 
-
 ## Information
 
 <table>
-<tr>
-<td>Package</td><td>react-adaptive</td>
-</tr>
-<tr>
-<td>Description</td>
-<td>Element size in react for adaptive design</td>
-</tr>
+  <tr>
+    <td>Package</td>
+    <td>react-adaptive</td>
+  </tr>
+  <tr>
+    <td>Description</td>
+    <td>Element size in react for adaptive design</td>
+  </tr>
+  <tr>
+    <td>Example (basic for now)</td>
+    <td>https://lokymil.github.io/react-adaptive/</td>
+  </tr>
 </table>
 
 ## Install
