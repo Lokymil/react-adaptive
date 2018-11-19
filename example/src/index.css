@@ -3,3 +3,21 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.center {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.red {
+  background-color: lightpink;
+}
+
+.green {
+  background-color: lightgreen;
+}
+
+.blue {
+  background-color: lightblue;
+}

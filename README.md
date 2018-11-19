@@ -28,14 +28,14 @@ npm install --save react-adaptive
 In that case, you have to define a function receiving the size of the component and returning expected component according to your own process.
 
 ```js
-import React, { Component } from "react";
-import { withAdaptive } from "./ResponsiveComponent";
+import React, { Component } from 'react';
+import { withAdaptive } from 'react-adaptive';
 
 class LargeComponent extends Component {
   render() {
     return (
-      <div className="flex">
-        My large with HOC and calculation {this.props.name}
+      <div>
+        My large component {this.props.name}
       </div>
     );
   }
@@ -44,8 +44,8 @@ class LargeComponent extends Component {
 class MediumComponent extends Component {
   render() {
     return (
-      <div className="flex">
-        My medium with HOC and calculation {this.props.name}
+      <div>
+        My medium component {this.props.name}
       </div>
     );
   }
@@ -54,8 +54,8 @@ class MediumComponent extends Component {
 class SmallComponent extends Component {
   render() {
     return (
-      <div className="flex">
-        My small with HOC and calculation {this.props.name}
+      <div>
+        My small component {this.props.name}
       </div>
     );
   }
@@ -86,13 +86,13 @@ Breakpoints name :
 </table>
 
 ```js
-import React, { Component } from "react";
-import { withBreakpoints, breakpoints } from "./ResponsiveComponent";
+import React, { Component } from 'react';
+import { withBreakpoints, breakpoints } from 'react-adaptive';
 
 class LargeComponent extends Component {
   render() {
     return (
-      <div className="flex">My large component with HOC {this.props.name}</div>
+      <div>My large component components.name}</div>
     );
   }
 }
@@ -100,7 +100,7 @@ class LargeComponent extends Component {
 class MediumComponent extends Component {
   render() {
     return (
-      <div className="flex">My medium component with HOC {this.props.name}</div>
+      <div>My medium component components.name}</div>
     );
   }
 }
@@ -108,7 +108,7 @@ class MediumComponent extends Component {
 class SmallComponent extends Component {
   render() {
     return (
-      <div className="flex">My small component with HOC {this.props.name}</div>
+      <div>My small component components.name}</div>
     );
   }
 }
@@ -139,8 +139,8 @@ size = { width: `current component width` }
 ```
 
 ```js
-import React from "react";
-import { withSize } from "react-adaptive";
+import React from 'react';
+import { withSize } from 'react-adaptive';
 
 const MyComponent = ({ size }) => (<div>My own size is {size.width}</div>);
 
