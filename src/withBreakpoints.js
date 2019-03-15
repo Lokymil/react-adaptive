@@ -11,7 +11,7 @@ const breakpoints = {
   xLarge: 'XLarge'
 }
 
-const withBreakpoints = componentBreakPoints => ({ components, defaultComponent }) => props => {
+const withBreakpoints = (componentBreakPoints, wrapperClassName) => ({ components, defaultComponent }) => props => {
   const getSizedElement = size => {
     let DisplayedComponent = defaultComponent || null
 
@@ -53,7 +53,7 @@ const withBreakpoints = componentBreakPoints => ({ components, defaultComponent 
     return <DisplayedComponent {...props} />
   }
 
-  return <ResponsiveWrapper>{size => getSizedElement(size)}</ResponsiveWrapper>
+  return <ResponsiveWrapper className={wrapperClassName}>{size => getSizedElement(size)}</ResponsiveWrapper>
 }
 
 export { breakpoints, withBreakpoints }
