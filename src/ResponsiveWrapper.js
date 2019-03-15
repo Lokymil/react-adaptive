@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
-import classNames from 'classnames'
 import PropTypes from 'prop-types'
-import style from './styles.css'
 
 class ResponsiveWrapper extends Component {
   constructor(props) {
@@ -43,7 +41,7 @@ class ResponsiveWrapper extends Component {
         ref={ref => {
           this.wrapper = ref
         }}
-        className={classNames(style.wrapper, this.props.className)}
+        className={this.props.className}
       >
         {this.props.children({ width: this.state.width })}
       </div>
