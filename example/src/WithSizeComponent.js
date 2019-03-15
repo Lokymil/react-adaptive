@@ -9,4 +9,4 @@ ExampleComponent.propTypes = {
   className: PropTypes.string
 }
 
-export default withSize(ExampleComponent, 'exampleClassName')
+export default withSize(ExampleComponent)

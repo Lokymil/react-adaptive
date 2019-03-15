@@ -42,6 +42,7 @@ class ResponsiveWrapper extends Component {
           this.wrapper = ref
         }}
         className={this.props.className}
+        style={this.props.className ? {} : {'display': 'flex', 'flex-grow': '1'}}
       >
         {this.props.children({ width: this.state.width })}
       </div>
